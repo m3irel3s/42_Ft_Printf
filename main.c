@@ -1,29 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_str.c                                     :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jmeirele <jmeirele@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/04 17:09:34 by jmeirele          #+#    #+#             */
-/*   Updated: 2024/11/05 21:40:36 by jmeirele         ###   ########.fr       */
+/*   Created: 2024/11/04 13:43:09 by jmeirele          #+#    #+#             */
+/*   Updated: 2024/11/05 21:45:18 by jmeirele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_print_str(char *str)
-{
-	int	counter;
+void test_char(void);
+void test_str(void);
 
-	if (!str)
-		return (ft_print_str("(null)"));
-	counter = 0;
-	while (*str)
-	{
-		ft_print_char((int) *str);
-		str++;
-		counter++;
-	}
-	return (counter);
+int	main(void)
+{
+	ft_printf("ft_printf: %p %p \n", 0, 0);
+	printf("printf: %p %p \n", 0, 0);
 }

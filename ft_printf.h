@@ -6,7 +6,7 @@
 /*   By: jmeirele <jmeirele@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 11:17:51 by jmeirele          #+#    #+#             */
-/*   Updated: 2024/11/05 14:43:29 by jmeirele         ###   ########.fr       */
+/*   Updated: 2024/11/05 21:45:07 by jmeirele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,6 @@ int	ft_print_char(int c);
 int	ft_print_str(char *str);
 int	ft_print_digit(long nb, int base, char c);
 int	ft_print_address(unsigned long address);
+int	ft_print_unsigned(unsigned int nb);
 
 #endif

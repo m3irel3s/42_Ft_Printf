@@ -6,7 +6,7 @@
 /*   By: jmeirele <jmeirele@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 12:18:21 by jmeirele          #+#    #+#             */
-/*   Updated: 2024/11/05 15:06:02 by jmeirele         ###   ########.fr       */
+/*   Updated: 2024/11/05 21:45:06 by jmeirele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,8 @@ int	ft_print_address(unsigned long address)
 	unsigned long	temp;
 	int				hex_length;
 
+	if (!address)
+		return (ft_print_str("(nil)"));
 	counter = 0;
 	counter += ft_print_str("0x");
 	if (address == 0)

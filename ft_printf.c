@@ -6,7 +6,7 @@
 /*   By: jmeirele <jmeirele@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 10:52:27 by jmeirele          #+#    #+#             */
-/*   Updated: 2024/11/05 15:05:42 by jmeirele         ###   ########.fr       */
+/*   Updated: 2024/11/05 21:45:09 by jmeirele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,10 @@ int	ft_print_format(char c, va_list args)
 		counter += ft_print_char('%');
 	else if (c == 's')
 		counter += ft_print_str(va_arg(args, char *));
-	else if (c == 'd' || c == 'i' || c == 'u')
+	else if (c == 'd' || c == 'i')
 		counter += ft_print_digit((long)va_arg(args, int), 10, 'd');
+	else if (c == 'u')
+		counter += ft_print_unsigned((unsigned int)va_arg(args, int));
 	else if (c == 'x')
 		counter += ft_print_digit((long)(va_arg(args, unsigned int)), 16, 'x');
 	else if (c == 'X')
