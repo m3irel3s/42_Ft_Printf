@@ -6,7 +6,7 @@
 /*   By: jmeirele <jmeirele@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 22:03:29 by jmeirele          #+#    #+#             */
-/*   Updated: 2024/11/05 21:46:30 by jmeirele         ###   ########.fr       */
+/*   Updated: 2024/11/05 21:49:03 by jmeirele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ int	ft_print_digit(long nb, int base, char c)
 		return (counter + ft_print_digit(nb % base, base, c));
 	}
 }
+
 int	ft_print_unsigned(unsigned int nb)
 {
 	int		counter;
@@ -41,7 +42,6 @@ int	ft_print_unsigned(unsigned int nb)
 
 	counter = 0;
 	symbols = "0123456789";
-
 	if (nb < 10)
 		counter += ft_print_char(symbols[nb]);
 	else
