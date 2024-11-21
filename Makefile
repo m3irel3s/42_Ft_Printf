@@ -1,22 +1,29 @@
-NAME    = libftprintf.a
-CC      = cc
-CFLAGS  = -Wall -Wextra -Werror -I.
+NAME    =	libftprintf.a
+CC      =	cc
+CFLAGS  =	-Wall -Wextra -Werror -I. -I$(INC_DIR)
+SRC_DIR =	src
+OBJ_DIR =	obj
+INC_DIR =	inc
 
-SRC     = ft_printf.c ft_print_char.c ft_print_str.c \
+FILES     = ft_printf.c ft_print_char.c ft_print_str.c \
           ft_print_digit.c ft_print_address.c
 
-OBJ     = $(SRC:.c=.o)
+SRC = $(addprefix $(SRC_DIR)/, $(FILES))
+OBJ = $(SRC:$(SRC_DIR)/%.c=$(OBJ_DIR)/%.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	ar rcs $(NAME) $(OBJ) 
+	ar rcs $(NAME) $(OBJ)
 
-%.o: %.c
+$(OBJ_DIR):
+	mkdir -p $(OBJ_DIR)
+
+$(OBJ_DIR)/%.o: $(SRC_DIR)/%.c | $(OBJ_DIR)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJ)
+	rm -rf $(OBJ_DIR)
 
 fclean: clean 
 	rm -f $(NAME)

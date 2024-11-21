@@ -1,22 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_print_char.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jmeirele <jmeirele@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/04 13:43:09 by jmeirele          #+#    #+#             */
-/*   Updated: 2024/11/05 21:49:19 by jmeirele         ###   ########.fr       */
+/*   Created: 2024/11/04 16:59:21 by jmeirele          #+#    #+#             */
+/*   Updated: 2024/11/05 21:46:31 by jmeirele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../inc/ft_printf.h"
 
-void test_char(void);
-void test_str(void);
-
-int	main(void)
+int	ft_print_char(int c)
 {
-	ft_printf("ft_printf: %p %p \n", 0, 0);
-	printf("printf: %p %p \n", 0, 0);
+	return (write(1, &c, 1));
 }
