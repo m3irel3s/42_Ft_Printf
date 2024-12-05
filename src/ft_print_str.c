@@ -12,6 +12,13 @@
 
 #include "../inc/ft_printf.h"
 
+/**
+ * Prints a string to the standard output.
+ *
+ * @param str The string to be printed.
+ *
+ * @return The number of characters printed.
+ */
 int	ft_print_str(char *str)
 {
 	int	counter;

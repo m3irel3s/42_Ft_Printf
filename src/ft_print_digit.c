@@ -12,6 +12,19 @@
 
 #include "../inc/ft_printf.h"
 
+/**
+ * @brief Recursively prints a number in a specified base and case.
+ *
+ * This function handles both positive and negative numbers. It prints the
+ * number `nb` in the specified `base`, using either lowercase or uppercase
+ * letters for bases greater than 10, based on the character `c`.
+ *
+ * @param nb The number to be printed.
+ * @param base The base for number representation (e.g., 10 for decimal, 16 for hexadecimal).
+ * @param c If 'X', uppercase letters are used for bases > 10; otherwise, lowercase.
+ *
+ * @return The number of characters printed.
+ */
 int	ft_print_digit(long nb, int base, char c)
 {
 	int		counter;
@@ -35,6 +48,15 @@ int	ft_print_digit(long nb, int base, char c)
 	}
 }
 
+/**
+ * @brief Prints an unsigned integer in decimal representation.
+ *
+ * Recursively prints an unsigned integer `nb` in decimal representation.
+ *
+ * @param nb The number to be printed.
+ *
+ * @return The number of characters printed.
+ */
 int	ft_print_unsigned(unsigned int nb)
 {
 	int		counter;

@@ -12,6 +12,13 @@
 
 #include "../inc/ft_printf.h"
 
+/**
+ * @brief Process a single format specifier and print the corresponding argument.
+ *
+ * @param c The format specifier character.
+ * @param args The variable argument list containing the arguments to be printed.
+ * @return The number of characters printed.
+ */
 int	ft_print_format(char c, va_list args)
 {
 	int	counter;
@@ -36,6 +43,13 @@ int	ft_print_format(char c, va_list args)
 	return (counter);
 }
 
+/**
+ * @brief Print a formatted string with variable arguments.
+ *
+ * @param format The format string containing format specifiers.
+ * @param ... The variable argument list containing the arguments to be printed.
+ * @return The number of characters printed.
+ */
 int	ft_printf(const char *format, ...)
 {
 	va_list	args;

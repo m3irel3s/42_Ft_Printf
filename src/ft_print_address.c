@@ -12,6 +12,14 @@
 
 #include "../inc/ft_printf.h"
 
+/**
+ * @brief Recursively prints the hexadecimal representation of an unsigned long integer.
+ *
+ * This function takes an unsigned long integer as input and prints its 
+ * hexadecimal representation using lowercase letters.
+ *
+ * @param n The unsigned long integer to be printed in hexadecimal format.
+ */
 static void	ft_putnbr_hex(unsigned long n)
 {
 	char	*symbols;
@@ -24,6 +32,17 @@ static void	ft_putnbr_hex(unsigned long n)
 	ft_print_char(symbols[n % 16]);
 }
 
+/**
+ * @brief Prints the address of a pointer in hexadecimal format.
+ *
+ * This function takes an unsigned long integer as input, interprets it as an address
+ * and prints it in hexadecimal format, including the "0x" prefix.
+ * If the address is 0, it prints "(nil)".
+ *
+ * @param address The address of the pointer to be printed in hexadecimal format.
+ *
+ * @return The number of characters printed.
+ */
 int	ft_print_address(unsigned long address)
 {
 	int				counter;

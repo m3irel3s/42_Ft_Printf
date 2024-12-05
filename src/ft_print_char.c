@@ -12,6 +12,12 @@
 
 #include "../inc/ft_printf.h"
 
+/**
+ * @brief Print a single character.
+ *
+ * @param c The character to be printed.
+ * @return The number of characters printed (1).
+ */
 int	ft_print_char(int c)
 {
 	return (write(1, &c, 1));
