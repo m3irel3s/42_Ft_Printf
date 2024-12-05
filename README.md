@@ -3,7 +3,7 @@
 ![Screenshot from 2024-12-05 14-15-20](https://github.com/user-attachments/assets/74eb5421-664f-4b20-a391-737fd85e671f)
 
 ## 🔍 Overview
-**ft_printf** is a custom implementation of the standard C `printf` function. This project re-creates the functionality of `printf` to handle formatted output, providing a learning experience in managing variable arguments and format specifiers in C. The goal is to build a robust, reusable version of `printf` that can be used across future projects, while understanding the intricacies of formatting and printing data in different styles.
+**Ft_Printf** is a custom implementation of the standard C `printf` function. This project re-creates the functionality of `printf` to handle formatted output, providing a learning experience in managing variable arguments and format specifiers in C. The goal is to build a robust, reusable version of `printf` that can be used across future projects, while understanding the intricacies of formatting and printing data in different styles.
 
 ---
 
