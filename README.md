@@ -1,3 +1,4 @@
 ### Ft_Printf
 
-![Screenshot from 2024-12-05 14-14-35](https://github.com/user-attachments/assets/c9220fdb-fb7f-4166-be41-32f828a936eb)
+![Screenshot from 2024-12-05 14-15-20](https://github.com/user-attachments/assets/74eb5421-664f-4b20-a391-737fd85e671f)
+
