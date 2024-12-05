@@ -1,3 +1,3 @@
 ### Ft_Printf
 
-file:///home/jmeirele/Pictures/Screenshots/Screenshot%20from%202024-12-05%2014-15-20.png
+![Screenshot from 2024-12-05 14-14-35](https://github.com/user-attachments/assets/c9220fdb-fb7f-4166-be41-32f828a936eb)
